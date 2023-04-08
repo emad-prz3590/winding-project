@@ -43,7 +43,7 @@
 
             <!-- Logo -->
             <a class="logo" href="#">
-                <img src="{% static 'img/clients-logo/1.png' %}" alt="logo">          
+                <img src="{% static 'home/img/logo-dark.png' %}" alt="logo">          
             </a>
 
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -567,111 +567,6 @@
 
 
         <!-- =====================================
-        ==== Start Price -->
-
-        <section class="price section-padding" data-scroll-index="4">
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="section-head text-center col-sm-12">
-                        <h4>قیمت های ما</h4>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="item mb-md50">
-                            <div class="cont">
-                                <div class="type">
-                                    <h6>پایه</h6>
-                                </div>
-                                <div class="price">
-                                    <h4>10,000 <span>تومان</span></h4>
-                                    <p>ماهانه</p>
-                                </div>
-                                <div class="feat">
-                                    <ul>
-                                        <li>10 GB فضای دیسک</li>
-                                        <li>15 نام دامنه</li>
-                                        <li>4 آدرس ایمیل</li>
-                                        <li><del>امنیت پیشرفته</del></li>
-                                        <li><del>پشتیبانی بی نهایت</del></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="order">
-                                <a href="#0" class="butn butn-light">
-                                    <span>سفارش دهید</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="item center mb-md50">
-                            <span class="popular">محبوب<span></span></span>
-                            <div class="cont">
-                                <div class="type">
-                                    <h6>کسب و کار</h6>
-                                </div>
-                                <div class="price">
-                                    <h4>25,000 <span>تومان</span></h4>
-                                    <p>ماهانه</p>
-                                </div>
-                                <div class="feat">
-                                    <ul>
-                                        <li>10 GB فضای دیسک</li>
-                                        <li>15 نام دامنه</li>
-                                        <li>4 آدرس ایمیل</li>
-                                        <li><del>امنیت پیشرفته</del></li>
-                                        <li>پشتیبانی بی نهایت</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="order">
-                                <a href="#0" class="butn butn-bg">
-                                    <span>سفارش دهید</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="item">
-                            <div class="cont">
-                                <div class="type">
-                                    <h6>طلایی</h6>
-                                </div>
-                                <div class="price">
-                                    <h4>50,000 <span>تومان</span></h4>
-                                    <p>ماهانه</p>
-                                </div>
-                                <div class="feat">
-                                    <ul>
-                                        <li>10 GB فضای دیسک</li>
-                                        <li>15 نام دامنه</li>
-                                        <li>4 آدرس ایمیل</li>
-                                        <li>امنیت پیشرفته</li>
-                                        <li>پشتیبانی بی نهایت</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="order">
-                                <a href="#0" class="butn butn-light">
-                                    <span>سفارش دهید</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- End Price ====
-        ======================================= -->
-
-
-
-        <!-- =====================================
         ==== Start Ready -->
 
         <section class="ready section-padding bg-img bg-fixed bg-center" data-background="img/bg1.jpg" data-overlay-dark="7">
@@ -1153,51 +1048,56 @@
 
 
        
+        {% block script %}
+
         <!-- jQuery -->
-        <script src="js/jquery-3.0.0.min.js"></script>
-        <script src="js/jquery-migrate-3.0.0.min.js"></script>
+        <script src="{% static 'home/js/jquery-3.0.0.min.js' %}"></script>
+        
+        <script src="{% static 'home/js/jquery-migrate-3.0.0.min.js' %}"></script>
 
         <!-- popper.min -->
-        <script src="js/popper.min.js"></script>
+        <script src="{% static 'home/js/popper.min.js' %}"></script>
 
         <!-- bootstrap -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="{% static 'home/js/bootstrap.min.js' %}"></script>
 
         <!-- scrollIt -->
-        <script src="js/scrollIt.min.js"></script>
+        <script src="{% static 'home/js/scrollIt.min.js' %}"></script>
 
         <!-- jquery.waypoints.min -->
-        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="{% static 'home/js/jquery.waypoints.min.js' %}"></script>
 
         <!-- jquery.counterup.min -->
-        <script src="js/jquery.counterup.min.js"></script>
+        <script src="{% static 'home/js/jquery.counterup.min.js' %}"></script>
 
         <!-- owl carousel -->
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="{% static 'home/js/owl.carousel.min.js' %}"></script>
 
         <!-- jquery.magnific-popup js -->
-        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="{% static 'home/js/jquery.magnific-popup.min.js' %}"></script>
 
         <!-- stellar js -->
-        <script src="js/jquery.stellar.min.js"></script>
+        <script src="{% static 'home/js/jquery.stellar.min.js' %}"></script>
 
         <!-- isotope.pkgd.min js -->
-        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="{% static 'home/js/isotope.pkgd.min.js' %}"></script>
 
         <!-- YouTubePopUp.jquery -->
-        <script src="js/YouTubePopUp.jquery.js"></script>
+        <script src="{% static 'home/js/YouTubePopUp.jquery.js' %}"></script>
 
         <!-- Map -->
-        <script src="js/map.js"></script>
+        <script src="{% static 'home/js/map.js' %}"></script>
 
         <!-- validator js -->
-        <script src="js/validator.js"></script>
+        <script src="{% static 'home/js/validator.js' %}"></script>
 
         <!-- custom scripts -->
-        <script src="js/scripts.js"></script>
+        <script src="{% static 'home/js/scripts.js' %}"></script>
 
         <!-- google map api -->
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEn4c_T1rFt7ltf_oNavnjND8dDPm4KQs&language=fa&callback=initMap"></script>
+
+        {% endblock %}
 
 		<!--[if lt IE 10]>
 		<script src="js/jquery.placeholder.min.js" type="text/javascript"></script>
